@@ -1,0 +1,52 @@
+create table sample(ID int,varchar(100));
+insert into(sample(Id,text) values(1,'vikash 1');
+insert into(sample(Id,text) values(2,'vikash 2');
+insert into(sample(Id,text) values(3,'vikash 3');
+insert into(sample(Id,text) values(4,'vikash 4');
+insert into(sample(Id,text) values(5,'vikash 5');
+insert into(sample(Id,text) values(6,'vikash 6');
+
+create table employeesalary(ID int,EmployeeName varchar(100),EmpSalary int);
+insert into employeesalary(ID ,EmployeeName,EmpSalary) values(1,'Employee 1',50000);
+insert into employeesalary(ID ,EmployeeName,EmpSalary) values(1,'Employee 1',50000);
+insert into employeesalary(ID ,EmployeeName,EmpSalary) values(2,'Employee 2',40000);
+insert into employeesalary(ID ,EmployeeName,EmpSalary) values(3,'Employee 3',30000);
+insert into employeesalary(ID ,EmployeeName,EmpSalary) values(4,'Employee 4',1000);
+insert into employeesalary(ID ,EmployeeName,EmpSalary) values(5,'Employee 5',6000);
+
+select * from employeesalary;
+select * from employeesalary where EMPsalary Between 1000 and 10000;
+select * from employeesalary where EmployeeName Like '%Emp%';
+select * from sample where Text LIKE 'sa%';
+select * from employeesalary where id in(1,2,3);
+select * from employeesalary where id NOT in(1,2,3);
+select EMPLOYEENAME ||'----'|| EMPsalary AS EmployeeANDSALARY from employeesalary; 
+select * from employeesalary where EMPSALARY<5000 and EMPSALARY>10000;
+select * from employeesalary where EmployeeName is null;
+select * from sample;
+select  DISTINCT TEXT from sample;
+select * from sample order by ID desc;
+select count(*) from sample;
+select count(*) from employeesalary;
+select SUM(EMPsalary) from employeesalary;
+select AVG(EMPsalary) from employeesalary;
+select MAX(EMPsalary) from employeesalary;
+select MIN(EMPsalary) from employeesalary;
+
+select * from sample;
+select TEXT from sample group by TEXT having count)text)>1
+create table SingleFunction(ID int,DecValue Numeric(6,8),INTvalue  int)
+insert into SingleFunction(ID,decValue,INTvalue) values(1,100.99,3);
+create table SingleFunction(ID int,DecValue Numeric(6,2),INTvalue  int)
+insert into SingleFunction(ID,decValue,INTvalue) values(1,1.232323,123);
+select * from SingleFunction;
+select ROUND(DecValue) from SingleFunction;
+select CEIL(32.65) from  dual;
+select CEIL(32.1) from  dual;
+select CEIL(-32.65) from  dual;
+select * from SingleFunction;
+select DecValue from SingleFunction;
+select Upper('sample') from dual;
+select INITCAP('hello i am here') from dual;
+select Concat('hello i am here','to work on oracle')from dual; 
+select SUBSTR('hello i am here to work on oracle',19,15) from dual;
